@@ -1,6 +1,12 @@
 1. TwoSum (2x) - TwoSum attempt 2 - Hash Table, arrays, nested loops  https://www.code-recipe.com/post/two-sum
 2. Palindrome - Need to look up better solutions, although I got this on the Codesmith interview.
 3. Roman to Integer - Hash Table, Math, String
+4. Valid-Parentheses - https://leetcode.com/problems/valid-parentheses/ 
+2-15 Notes:
+- Finished Valid-Parentheses and took like 90 mins, still need to look over discuss/solutions.
+    - Def a candidate for refactoring but I'm proud that I got it.
+    - Took way too long but I got a recursive solution and used find, splice.   
+
 
 2-14 Notes:
 - Could've gone way faster, need to more comprehensively re-evaluate my approach when I hit a block and see all of the areas that could be wrong. I maybe could've fixed it because I was returning at first, but I immediately assumed the method was wrong, which caused me to change the logic before realizing I was returning str.

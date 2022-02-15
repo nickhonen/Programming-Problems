@@ -48,12 +48,7 @@ return revNumber === x;
 // returns boolean
 };
 
-// my test cases
-// const palindromeTest = [0, 121, -220, 345, 343434, 892, 999]
-// const results = palindromeTest.map(a => isPalindrome(a));
-
 // 3. Roman to Integer - Last Solved Feb 13
-
 
 var romanToInt = function(s) { 
     const inputArr = s.split('');
@@ -85,3 +80,35 @@ var romanToInt = function(s) {
     return result;
 };
 
+// 4. isValid - Last solved Feb 15.
+
+var isValid = function(s) {
+    const closePar = ['}', ')', ']'];
+    const obj = {
+        '(': ')',
+        '[': ']',
+        '{': '}'
+    }
+    const arr = s.split('');
+    if (s.length % 2 !== 0) return false;
+
+    const result = function recurse() {
+        let firstClose = arr.find(element => closePar.includes(element));
+        let firstCloseIndex = arr.findIndex(element => closePar.includes(element));
+        let lastOpen = arr[firstCloseIndex - 1];
+        let lastOpenIndex = firstCloseIndex - 1;
+        s = arr.length;
+        console.log(obj[lastOpen])
+        console.log(firstClose);
+        
+        if (s <= 0) {
+            return true;
+        } else if (obj[lastOpen] !== firstClose || firstClose === undefined) {
+            return false;
+        } else {
+            arr.splice(lastOpenIndex, 2);
+            return recurse();
+        }
+    }
+    return result();
+}
