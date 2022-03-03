@@ -3,7 +3,8 @@ Documenting my progress on coding challenges.
 
 Trying to analyze patterns, hone my problem-solving process, and hopefully see improvements!
 
-*Update 3-2-22:* Currently doing Exercises for Programmers. The reason I think this is better for me right now as opposed to Leetcode or Codewars is because the problems in this book are more intentional, more pointed. It kinda just felt like I was doing random repetition with other websites, and I don't think I was fully ready. Often I would attempt problems chosen at random for long periods of time, write some super ugly code, and would eventually hack together a brute-force solution and be on with it. After doing this for a few weeks and not seeing much improvement, I decided I wasn't ready. 
+*Update 3-2-22:* Currently doing Exercises for Programmers+Exercism. The reason I think this is better for me right now as opposed to Leetcode or Codewars is because the problems in this book are more intentional, more pointed. It kinda just felt like I was doing random repetition with other websites, and I don't think I was fully ready. Often I would attempt problems chosen at random for long periods of time, write some super ugly code, and would eventually hack together a brute-force solution and be on with it. After doing this for a few weeks and not seeing much improvement, I decided I wasn't ready. Wil go back to Leetcode whenever I finish 61B. 
+Also, Exercises for Programmers + Exerxism will be great to do to get used to a new language, which Leetcode definitely is not optimal for. 
 
 
 ## Exercises for Programmers
