@@ -1,5 +1,4 @@
 
-
 function moveZeros(arr) {
     const newArr = [];
     // for each on array
@@ -7,7 +6,7 @@ function moveZeros(arr) {
     // then push a new 0 to end of array
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] === 0) {
-        arr.splsomice(i, 1);
+        arr.splice(i, 1);
         newArr.push(0);
       }
     }
