@@ -1,18 +1,28 @@
-
-function moveZeros(arr) {
-    const newArr = [];
-    // for each on array
-    // check if current value is zero, slice it
-    // then push a new 0 to end of array
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === 0) {
-        arr.splice(i, 1);
-        newArr.push(0);
-      }
+var removeDuplicates = function(nums) {
+  // if nums.length === 1 return nums
+  //initialize p1; set = to first index of nums
+  // initialize p2; set = to second index of nums
+  // initalize counter for duplicates
+  // while p2 < nums.length
+      // if equal, pop p2, push, and increment
+      // if not equal, increment both
+  
+// first attempt
+    if (nums.length === 1) return nums;
+    let p1 = 0;
+    let p2 = 1;
+    let ogLen = nums.length
+    // can you initialize more than one var on a line?
+    while (p2 < ogLen) {
+        if (nums[p1] === nums[p2]) {
+            nums.splice(p2, 1);
+            nums.push(nums[p2]);
+            p2 += 1;
+        } else {
+            p1 += 1;
+            p2 += 1;
+        } 
+        console.log(nums)
     }
-    console.log(newArr);
-    console.log(arr);
-    return arr;
-}
-
-console.log(moveZeros([ 9, 0, 9, 1, 2, 1, 1, 3, 1, 9, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0 ]));
+    return nums
+};
